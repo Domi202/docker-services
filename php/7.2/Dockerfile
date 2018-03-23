@@ -25,7 +25,7 @@ RUN NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
 --with-freetype-dir=/usr/include/ \
 --with-png-dir=/usr/include/ \
 --with-jpeg-dir=/usr/include/ \
-&& docker-php-ext-install -j${NPROC} mysqli zip soap iconv gd
+&& docker-php-ext-install -j${NPROC} mysqli calendar zip soap iconv gd
 
 # clean up
 RUN apk del --no-cache \
