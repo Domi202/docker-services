@@ -1,5 +1,7 @@
 FROM httpd:2.4-alpine
 
+ENV WEB_DIR "Web/"
+
 RUN apk --update add openssl \
 rsync openssh
 
