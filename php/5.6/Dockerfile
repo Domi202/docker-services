@@ -39,10 +39,10 @@ libxml2-dev \
 && apt-get clean
 
 # add custom php settings
-ADD config/custom.ini /usr/local/etc/php/conf.d/custom.ini
+COPY config/custom.ini /usr/local/etc/php/conf.d/custom.ini
 
 # install composer
-ADD config/composer-installer /usr/local/bin/
+COPY config/composer-installer /usr/local/bin/
 RUN chmod a+x /usr/local/bin/composer-installer
 RUN composer-installer
 
