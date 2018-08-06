@@ -1,4 +1,8 @@
-.PHONY: php56 php70 php71 php72
+.PHONY: php55 php56 php70 php71 php72
+
+php55:
+	docker build -t dkreemers/php-5.6:latest php/5.5
+	docker run -it --rm dkreemers/php-5.5:latest bash -c "php -v && composer -v"
 
 php56:
 	docker build -t dkreemers/php-5.6:latest php/5.6
