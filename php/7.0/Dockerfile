@@ -12,7 +12,7 @@ libxml2-dev \
 curl \
 git \
 subversion \
-openssh-server \
+openssh-client \
 openssl \
 mercurial \
 bash \
