@@ -17,6 +17,7 @@ openssl \
 mercurial \
 bash \
 zlib1g-dev \
+libzip-dev \
 locales
 
 # install, configure and enable php extensions
