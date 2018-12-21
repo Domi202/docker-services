@@ -2,8 +2,10 @@ FROM httpd:2.4
 
 ENV WEB_DIR "Web/"
 
-RUN apk --update add openssl \
-rsync openssh
+RUN apt-get update && apt-get install -y \
+openssl \
+openssh-client \
+rsync
 
 COPY ./config/httpd.conf /usr/local/apache2/conf/httpd.conf
 COPY ./config/default-vhost.conf /usr/local/apache2/conf/extra/vhosts/default-vhost.conf
