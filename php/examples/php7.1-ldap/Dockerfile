@@ -1,4 +1,4 @@
-FROM dkreemers/php-7.1
+FROM dkreemers/php:7.1
 
 RUN apt-get update \
 	&& apt-get install -y libldap2-dev \

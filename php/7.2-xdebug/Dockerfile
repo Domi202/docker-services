@@ -1,4 +1,4 @@
-FROM dkreemers/php-7.2
+FROM dkreemers/php:7.2
 
 # install xdebug
 RUN apt-get install -y $PHPIZE_DEPS \
